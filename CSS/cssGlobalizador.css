@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Cabecera (Header) */
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.search-form {
+    display: flex;
+}
+
+.search-form input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contenido Principal (Main Content) */
+main {
+    flex: 2;
+    margin-right: 20px;
+}
+
+article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #007bff;
+}
+
+article .fecha {
+    color: #777;
+    font-style: italic;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.comentarios {
+    margin-top: 15px;
+}
+
+.comentarios textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.comentarios button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Barra Lateral (Sidebar) */
+aside {
+    flex: 1;
+}
+
+aside section {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+aside h3 {
+    color: #007bff;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 5px;
+}
+
+.icono {
+    display: inline-block;
+    margin-right: 8px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Pie de Página (Footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    main, aside {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .busqueda {
+        margin-top: 10px;
+    }
+}
